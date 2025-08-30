@@ -325,3 +325,38 @@ img-comparison-slider img {
     background-color: #333;
     transform: translateY(-2px);
 }
+
+.header nav a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.header nav a:hover {
+    color: transparent;
+    background-size: 200% auto;
+    animation: text-gradient-animation 0.5s ease forwards;
+    background-image: linear-gradient(45deg, #007bff, #00bcd4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes text-gradient-animation {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -100% center;
+    }
+}
+
+.header h1:hover {
+    background-image: linear-gradient(45deg, #007bff, #00bcd4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: text-gradient-animation 0.5s ease forwards;
+}

@@ -42,4 +42,22 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    const navLinks = document.querySelectorAll('.header nav ul li a[href^="#"]');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            const targetId = link.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - document.querySelector('.header').offsetHeight,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
 });
