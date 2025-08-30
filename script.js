@@ -20,4 +20,26 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    const sliderDepoimentosWrapper = document.querySelector('.slider-depoimentos-wrapper');
+    const prevDepoimentosArrow = document.querySelector('.slider-depoimentos-arrow.prev-arrow');
+    const nextDepoimentosArrow = document.querySelector('.slider-depoimentos-arrow.next-arrow');
+
+    if (sliderDepoimentosWrapper && prevDepoimentosArrow && nextDepoimentosArrow) {
+        const depoimentoWidth = sliderDepoimentosWrapper.querySelector('.depoimento-item').offsetWidth + 32;
+
+        prevDepoimentosArrow.addEventListener('click', () => {
+            sliderDepoimentosWrapper.scrollBy({
+                left: -depoimentoWidth,
+                behavior: 'smooth'
+            });
+        });
+
+        nextDepoimentosArrow.addEventListener('click', () => {
+            sliderDepoimentosWrapper.scrollBy({
+                left: depoimentoWidth,
+                behavior: 'smooth'
+            });
+        });
+    }
 });

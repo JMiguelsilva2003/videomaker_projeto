@@ -247,3 +247,110 @@ img-comparison-slider img {
     object-fit: cover;
     display: block;
 }
+
+.slider-depoimentos-container {
+    position: relative;
+    max-width: 800px;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+}
+
+.slider-depoimentos-arrow {
+    background-color: transparent;
+    border: none;
+    font-size: 2.5rem;
+    color: var(--cor-secundaria);
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.slider-depoimentos-arrow:hover {
+    color: var(--cor-clara);
+}
+
+.slider-depoimentos-wrapper {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.depoimento-item {
+    min-width: clamp(280px, 80vw, 700px);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    color: var(--cor-secundaria);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.depoimento-item p {
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.depoimento-item h4 {
+    margin-bottom: 0.5rem;
+    color: var(--cor-secundaria);
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-grupo label {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+    padding: 0.8rem;
+    border: 1px solid var(--cor-clara);
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cor-clara);
+    color: var(--cor-texto);
+    transition: border-color 0.3s ease;
+}
+
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+}
+
+.btn-enviar {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
