@@ -244,8 +244,6 @@ img-comparison-slider {
 img-comparison-slider img {
     width: 100%;
     height: 500px;
-    object-fit: cover;
-    display: block;
 }
 
 .slider-depoimentos-container {
@@ -384,3 +382,55 @@ img-comparison-slider img {
     background-color: #0056b3;
     transform: scale(1.05);
 }
+
+/* parte do antes e depois*/
+
+img-comparison-slider figure {
+    margin: 0;
+    position: relative;
+}
+
+img-comparison-slider figcaption {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.014);
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+img-comparison-slider figure[slot="second"] figcaption {
+    left: auto;
+    right: 10px;
+}
+
+img-comparison-slider img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+img-comparison-slider figure figcaption {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.014);
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+img-comparison-slider {
+    --divider-width: 4px;
+    --divider-color: #007bff;
+}
+
+@media (max-width: 600px){
+    img-comparison-slider img { height: 320px; }
+    img-comparison-slider figure figcaption { font-size: .85rem; top: 8px; }
+}
+

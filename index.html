@@ -22,13 +22,14 @@
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#antes-depois">Trabalhos</a></li>
                 <li><a href="#albuns">Projetos</a></li>
-                <li><a href="#depoimentos">depoimentos</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- HERO -->
         <section id="hero" class="secao-fundo-imagem">
             <div class="conteudo-secao">
                 <h2>Transforme momentos em experiências inesquecíveis.</h2>
@@ -38,6 +39,7 @@
             <video autoplay loop muted class="hero-video" src="videos/teste.mp4"></video>
         </section>
 
+        <!-- SOBRE -->
         <section id="sobre" class="secao-fundo-branco">
             <div class="conteudo-secao">
                 <h2>Sobre a Vision Filmes</h2>
@@ -47,21 +49,41 @@
             </div>
         </section>
 
+        <!-- ANTES E DEPOIS -->
         <section id="antes-depois" class="secao-fundo-imagem">
             <div class="conteudo-secao">
                 <h2>A Magia da Pós-Produção</h2>
                 <p>Veja a transformação de uma cena com o poder da edição.</p>
-                <img-comparison-slider>
-                    <img slot="first" src="imagens/img02.jpeg" alt="Imagem antes da edição" />
-                    <img slot="second" src="imagens/img01.jpeg" alt="Imagem depois da edição" />
-                </img-comparison-slider>
-                <img-comparison-slider>
-                    <img slot="first" src="imagens/img03.jpeg" alt="Imagem antes da edição" />
-                    <img slot="second" src="imagens/img04.jpeg" alt="Imagem depois da edição" />
-                </img-comparison-slider>
+
+                <!-- Slider 1 -->
+                <!-- Slider 1 -->
+<img-comparison-slider class="ics">
+  <figure slot="first">
+    <img src="imagens/img02.jpeg" alt="Imagem antes da edição" />
+    <figcaption>Antes</figcaption>
+  </figure>
+  <figure slot="second">
+    <img src="imagens/img01.jpeg" alt="Imagem depois da edição" />
+    <figcaption>Depois</figcaption>
+  </figure>
+</img-comparison-slider>
+
+<!-- Slider 2 -->
+<img-comparison-slider class="ics">
+  <figure slot="first">
+    <img src="imagens/img03.jpeg" alt="Imagem antes da edição" />
+    <figcaption>Antes</figcaption>
+  </figure>
+  <figure slot="second">
+    <img src="imagens/img04.jpeg" alt="Imagem depois da edição" />
+    <figcaption>Depois</figcaption>
+  </figure>
+</img-comparison-slider>
+
             </div>
         </section>
         
+        <!-- PROJETOS -->
         <section id="albuns" class="secao-fundo-branco">
             <div class="conteudo-secao">
                 <h2>Nossos Projetos</h2>
@@ -69,30 +91,19 @@
                 <div class="slider-container">
                     <button class="slider-arrow prev-arrow">&lt;</button>
                     <div class="slider-wrapper">
-                        <div class="slider-item item-1">
-                            <h3>Casamentos</h3>
-                        </div>
-                        <div class="slider-item item-2">
-                            <h3>Eventos</h3>
-                        </div>
-                        <div class="slider-item item-3">
-                            <h3>Vídeos Corporativos</h3>
-                        </div>
-                        <div class="slider-item item-4">
-                            <h3>Fashion Films</h3>
-                        </div>
-                        <div class="slider-item item-5">
-                            <h3>Making Of</h3>
-                        </div>
-                        <div class="slider-item item-6">
-                            <h3>Publicidade</h3>
-                        </div>
+                        <div class="slider-item item-1"><h3>Casamentos</h3></div>
+                        <div class="slider-item item-2"><h3>Eventos</h3></div>
+                        <div class="slider-item item-3"><h3>Vídeos Corporativos</h3></div>
+                        <div class="slider-item item-4"><h3>Fashion Films</h3></div>
+                        <div class="slider-item item-5"><h3>Making Of</h3></div>
+                        <div class="slider-item item-6"><h3>Publicidade</h3></div>
                     </div>
                     <button class="slider-arrow next-arrow">&gt;</button>
                 </div>
             </div>
         </section>
 
+        <!-- DEPOIMENTOS -->
         <section id="depoimentos" class="secao-fundo-imagem">
             <div class="conteudo-secao">
                 <h2>O que nossos clientes dizem</h2>
@@ -117,6 +128,7 @@
             </div>
         </section>
         
+        <!-- CONTATO -->
         <section id="contato" class="secao-fundo-branco">
             <div class="conteudo-secao">
                 <h2>Entre em Contato</h2>
@@ -140,6 +152,7 @@
         </section>
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <p>&copy; 2025 Portfólio de Videomaker. Todos os direitos reservados.</p>
     </footer>
