@@ -434,3 +434,39 @@ img-comparison-slider {
     img-comparison-slider figure figcaption { font-size: .85rem; top: 8px; }
 }
 
+.divisoria-azul {
+    width: 100%;
+    height: 10px; 
+    background-image: linear-gradient(90deg, #ff8c00, #ff4500);
+    margin: 0rem auto;
+}
+
+.divisoria-letreiro {
+    width: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(90deg, #ff8c00, #ff4500);
+    padding: 1.5rem 0;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.letreiro-wrapper {
+    display: inline-block;
+    animation: marquee 30s linear infinite;
+}
+
+.letreiro-texto {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    padding-right: 2rem;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
