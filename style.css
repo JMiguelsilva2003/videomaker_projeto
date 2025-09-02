@@ -419,14 +419,17 @@ img-comparison-slider figure figcaption {
     left: 10px;
     background: rgba(0, 0, 0, 0.014);
     color: #fff;
-    padding: 4px 8px;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: bold;
+}
+
+#depois {
+    top: 23px;
 }
 
 img-comparison-slider {
     --divider-width: 4px;
-    --divider-color: #007bff;
+    --divider-color: #ff8c00;
 }
 
 @media (max-width: 600px){
