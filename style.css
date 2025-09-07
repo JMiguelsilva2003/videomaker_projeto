@@ -473,8 +473,3 @@ img-comparison-slider {
         transform: translateX(-100%);
     }
 }
-
-#video {
-    width: 900px;
-    height: 900px;
-}
