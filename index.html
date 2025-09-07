@@ -7,6 +7,7 @@
     
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="vendor/img-comparison-slider/styles.css">
+    <link rel="stylesheet" href="responsive.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,14 @@
 
     <header class="header">
         <h1><img src="imagens/Logo vision filmes escrita2.png" alt="logo"></h1>
-        <nav>
+
+        <button class="menu-hamburguer" aria-label="Abrir menu">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+        </button>
+
+        <nav class="nav-menu">
             <ul>
                 <li><a href="#hero">Início</a></li>
                 <li><a href="#sobre">Sobre</a></li>
@@ -35,10 +43,14 @@
                 <p>Sua marca, seu evento ou sua história merecem ser contados com impacto e autenticidade. Fotografia e audiovisual que emocionam, inspiram e conectam.</p>
                 <a href="https://wa.link/dzhjbe" class="cta-link" target="_blank">Garanta agora o seu projeto exclusivo e dê o próximo passo para se destacar.</a>
             </div>
-            <video autoplay loop muted class="hero-video" src="videos/teste.mp4"></video>
+            <video autoplay loop muted class="hero-video" src="videos/video_teste.mov"></video>
         </section>
 
-        <div class="divisoria-azul"></div>
+        <div class="divisoria-letreiro">
+            <div class="letreiro-wrapper">
+            <span class="letreiro-texto">Edição de Vídeos • Motion Graphics • Color Grading • Roteiro • Direção • Filmagens Aéreas • Edição de Vídeos • Motion Graphics • Color Grading • Roteiro • Direção • Filmagens Aéreas • </span>
+            </div>
+        </div>
 
         <section id="sobre" class="secao-fundo-branco">
             <div class="conteudo-secao">
@@ -167,5 +179,6 @@
 
     <script src="vendor/img-comparison-slider/index.js" defer></script>
     <script src="script.js"></script>
+    <script src="responsive.js"></script>
 </body>
 </html>
