@@ -473,3 +473,7 @@ img-comparison-slider {
         transform: translateX(-100%);
     }
 }
+
+.menu-hamburguer {
+        display: none;
+    }
