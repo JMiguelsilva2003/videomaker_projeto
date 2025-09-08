@@ -86,7 +86,7 @@ body {
     z-index: 2;
 }
 
-.hero-video {
+.hero-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -368,7 +368,7 @@ img-comparison-slider img {
 
 .cta-link {
     display: inline-block;
-    background-color: #007bff;
+    background-image: linear-gradient(45deg, #007bff, #008c9e);
     color: #fff;
     padding: 1rem 2rem;
     border-radius: 5px;
@@ -379,8 +379,9 @@ img-comparison-slider img {
 }
 
 .cta-link:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+    background-image: linear-gradient(45deg, #007bff, #00bcd4);
+    background-size: 200% auto;
+    animation: text-gradient-animation 0.5s ease forwards;
 }
 
 /* parte do antes e depois*/
