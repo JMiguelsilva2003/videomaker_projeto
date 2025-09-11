@@ -92,10 +92,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // Mapeamento das mídias por ID de projeto
 const midiasProjetos = {
     'casamentos': [
-        { tipo: 'video', src: '.mp4' },
-        { tipo: 'imagem', src: 'imagens/casamento1.jpg' },
-        { tipo: 'imagem', src: 'imagens/casamento2.jpg' },
-        { tipo: 'imagem', src: 'imagens/casamento3.jpg' },
+        { tipo: 'video', src: 'videos/casamento01.mov' },
+        { tipo: 'video', src: 'videos/casamento02.MOV' },
+        { tipo: 'video', src: 'videos/casamento03.mp4' },
     ],
     'futevolei': [
         { tipo: 'imagem', src: 'imagens/Projetos/futvolei01.JPG' },
@@ -140,7 +139,7 @@ const midiasProjetos = {
                     if (midia.tipo === 'video') {
                         elemento = document.createElement('video');
                         elemento.src = midia.src;
-                        elemento.autoplay = true;
+                        elemento.autoplay = false;
                         elemento.loop = true;
                         elemento.muted = true;
                         elemento.controls = true;
