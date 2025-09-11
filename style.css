@@ -186,15 +186,15 @@ body {
 }
 
 .slider-item.item-1 {
-    background-image: url('imagens/teste1.jpg');
+    background-image: url('imagens/Projetos/casamento02.jpg');
 }
 
 .slider-item.item-2 {
-    background-image: url('imagens/teste.jpg');
+    background-image: url('imagens/Projetos/futvolei03.JPG');
 }
 
 .slider-item.item-3 {
-    background-image: url('imagens/teste1.jpg');
+    background-image: url('imagens/Projetos/aniversário01.jpg');
 }
 
 .slider-item.item-4 {
@@ -543,3 +543,115 @@ img-comparison-slider {
     .conteudo-secao p {
         flex-basis: 50%;
     }
+
+    /* Estilos da nova timeline de habilidades */
+.timeline-container {
+    display: flex;
+    position: relative;
+    max-width: 800px;
+    margin: 4rem auto;
+    gap: 2rem;
+}
+
+.linha-vertical {
+    width: 4px;
+    background-color: #e0e0e0;
+    position: relative;
+    align-self: stretch;
+}
+
+.linha-de-progresso {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to bottom, #ff8c00, #ff4500);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: height 0.2s linear;
+}
+
+.timeline-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.habilidade-item {
+    position: relative;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    border-radius: 8px;
+    color: var(--cor-secundaria);
+    transition: background-color 0.3s ease;
+}
+
+.habilidade-item:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.habilidade-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.checkpoint {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    position: absolute;
+    left: calc(-2rem - 10px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.checkpoint-ativo {
+    background-color: #ff4500;
+    transform: scale(1.2);
+}
+
+.slider-comparacao-container {
+    margin: 4rem auto 2rem;
+}
+
+/* Estilos para a galeria de imagens */
+.portfolio-galeria {
+    display: none;
+    width: 100%;
+    margin-top: 2rem;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+}
+
+.portfolio-galeria.mostra-galeria {
+    display: grid;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.portfolio-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Animação para um layout não uniforme */
+.portfolio-galeria img:nth-child(2n) {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

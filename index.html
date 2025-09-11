@@ -21,7 +21,7 @@
             <ul>
                 <li><a href="#hero">Início</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#antes-depois">Trabalhos</a></li>
+                <li><a href="#antes-depois">Trabalho</a></li>
                 <li><a href="#albuns">Projetos</a></li>
                 <li><a href="#depoimentos">Depoimentos</a></li>
                 <li><a href="#contato">Contato</a></li>
@@ -75,10 +75,50 @@
         <div class="divisoria-azul"></div>
 
         <section id="antes-depois" class="secao-fundo-imagem">
-            <div class="conteudo-secao">
-                <h2>A Magia da Pós-Produção</h2>
-                <p>Veja a transformação de uma cena com o poder da edição.</p>
+    <div class="conteudo-secao">
+        <h2>A Magia da Pós-Produção</h2>
 
+        <div class="timeline-container">
+            <div class="linha-vertical">
+                <div class="linha-de-progresso"></div>
+            </div>
+            <div class="timeline-content">
+        <div class="habilidade-item">
+            <div class="checkpoint"></div>
+            <h3>Edição de Vídeos</h3>
+            <p>Cortes precisos, transições suaves e narrativa envolvente para contar sua história de forma impactante.</p>
+        </div>
+        <div class="habilidade-item">
+            <div class="checkpoint"></div>
+            <h3>Motion Graphics</h3>
+            <p>Animações dinâmicas que dão vida às suas ideias, tornando conceitos complexos mais acessíveis e atraentes.</p>
+        </div>
+        <div class="habilidade-item">
+            <div class="checkpoint"></div>
+            <h3>Color Grading</h3>
+            <p>Ajuste de cores profissional para criar a atmosfera perfeita, elevando a qualidade visual de cada cena.</p>
+        </div>
+        <div class="habilidade-item">
+            <div class="checkpoint"></div>
+            <h3>Roteiro</h3>
+            <p>Construção de narrativas sólidas e criativas para garantir que sua mensagem seja clara e memorável, do início ao fim.</p>
+        </div>
+        <div class="habilidade-item">
+            <div class="checkpoint"></div>
+            <h3>Direção</h3>
+            <p>Orientação e coordenação completa da equipe para transformar a visão criativa em realidade, garantindo a excelência do projeto.</p>
+        </div>
+        <div class="habilidade-item">
+            <div class="checkpoint"></div>
+            <h3>Filmagens Aéreas</h3>
+            <p>Captura de imagens aéreas cinematográficas com drones para adicionar uma nova perspectiva e valor de produção aos seus vídeos.</p>
+        </div>
+    </div>
+</div>
+
+        <p>Veja a transformação de uma cena com o poder da edição.</p>
+
+        <div class="slider-comparacao-container">
             <img-comparison-slider class="ics">
                 <figure slot="first">
                     <img src="imagens/img02.jpeg" alt="Imagem antes da edição" />
@@ -86,7 +126,7 @@
                 </figure>
                 <figure slot="second">
                     <img src="imagens/img01.jpeg" alt="Imagem depois da edição" />
-                <figcaption  id="depois">Depois</figcaption>
+                    <figcaption id="depois">Depois</figcaption>
                 </figure>
             </img-comparison-slider>
 
@@ -96,13 +136,13 @@
                     <figcaption>Antes</figcaption>
                 </figure>
                 <figure slot="second">
-            <img src="imagens/img04.jpeg" alt="Imagem depois da edição" />
-                <figcaption id="depois">Depois</figcaption>
+                    <img src="imagens/img04.jpeg" alt="Imagem depois da edição" />
+                    <figcaption id="depois">Depois</figcaption>
                 </figure>
             </img-comparison-slider>
-
-            </div>
-        </section>
+        </div>
+    </div>
+</section>
 
         <div class="divisoria-letreiro">
             <div class="letreiro-wrapper">
@@ -110,25 +150,28 @@
             </div>
         </div>
         
-        <section id="albuns" class="secao-fundo-branco">
-            <div class="conteudo-secao">
-                <h2>Nossos Projetos</h2>
-                <p>Explore alguns dos nossos trabalhos mais recentes.</p>
-                <div class="slider-container">
-                    <button class="slider-arrow prev-arrow">&lt;</button>
-                    <div class="slider-wrapper">
-                        <div class="slider-item item-1"><h3>Casamentos</h3></div>
-                        <div class="slider-item item-2"><h3>Eventos</h3></div>
-                        <div class="slider-item item-3"><h3>Vídeos Corporativos</h3></div>
-                        <div class="slider-item item-4"><h3>Fashion Films</h3></div>
-                        <div class="slider-item item-5"><h3>Making Of</h3></div>
-                        <div class="slider-item item-6"><h3>Publicidade</h3></div>
-                    </div>
-                    <button class="slider-arrow next-arrow">&gt;</button>
-                </div>
+<section id="albuns" class="secao-fundo-branco">
+    <div class="conteudo-secao">
+        <h2>Nossos Projetos</h2>
+        <p>Explore alguns dos nossos trabalhos mais recentes.</p>
+        <div class="slider-container">
+            <button class="slider-arrow prev-arrow">&lt;</button>
+            <div class="slider-wrapper">
+                <div class="slider-item item-1" data-id="casamentos"><h3>Casamentos</h3></div>
+                <div class="slider-item item-2" data-id="futevolei"><h3>Futevôlei</h3></div>
+                <div class="slider-item item-3" data-id="aniversario"><h3>aniversário</h3></div>
+                <div class="slider-item item-4" data-id="fashion-films"><h3>Fashion Films</h3></div>
+                <div class="slider-item item-5" data-id="making-of"><h3>Making Of</h3></div>
+                <div class="slider-item item-6" data-id="publicidade"><h3>Publicidade</h3></div>
             </div>
-            <a href="https://wa.link/dzhjbe" class="cta-link" target="_blank">Garanta agora o seu projeto exclusivo e dê o próximo passo para se destacar.</a>
-        </section>
+            <button class="slider-arrow next-arrow">&gt;</button>
+        </div>
+
+        <div id="portfolio-galeria" class="portfolio-galeria">
+            </div>
+    </div>
+    <a href="https://wa.link/dzhjbe" class="cta-link" target="_blank">Garanta agora o seu projeto exclusivo e dê o próximo passo para se destacar.</a>
+</section>
 
         <div class="divisoria-azul"></div>
 
