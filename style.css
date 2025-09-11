@@ -118,7 +118,7 @@ body {
 
 .slider-container {
     position: relative;
-    max-width: 1000px;
+    max-width: 100%;
     margin: 2rem auto;
     display: flex;
     align-items: center;
@@ -186,7 +186,7 @@ body {
 }
 
 .slider-item.item-1 {
-    background-image: url('imagens/Projetos/casamento02.jpg');
+    background-image: url('imagens/Projetos/casamento.png');
 }
 
 .slider-item.item-2 {
@@ -690,8 +690,8 @@ img-comparison-slider {
 
 .fechar-modal {
     position: absolute;
-    top: 20px;
-    right: 35px;
+    top: -50px;
+    right: -35px;
     color: #fff;
     font-size: 40px;
     font-weight: bold;
@@ -739,7 +739,7 @@ img-comparison-slider {
 
 .portfolio-galeria img:hover,
 .portfolio-galeria video:hover {
-    transform: scale(1.05);
+    transform: scale(1.04);
 }
 
 .portfolio-galeria img:nth-child(2n),
@@ -751,4 +751,10 @@ img-comparison-slider {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+#albuns .conteudo-secao {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
 }

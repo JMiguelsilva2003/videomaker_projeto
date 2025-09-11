@@ -83,7 +83,11 @@
         font-size: 1rem;
     }
 
-    
+    .fechar-modal {
+        top: -60px;
+        right: 0px;
+    }
+
 .header h1 img{
     height: 13.5px;
 }
