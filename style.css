@@ -410,7 +410,7 @@ img-comparison-slider figure[slot="second"] figcaption {
 
 img-comparison-slider img {
     width: 100%;
-    height: 500px;
+    height: 400px;
     object-fit: cover;
     display: block;
 }
@@ -432,6 +432,20 @@ img-comparison-slider figure figcaption {
 img-comparison-slider {
     --divider-width: 4px;
     --divider-color: #ff8c00;
+}
+
+.slider-comparacao-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Espaço entre os sliders */
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+img-comparison-slider {
+    flex: 1; /* Permite que o slider se expanda */
+    max-width: 500px; /* Limite a largura para não ficarem grandes demais */
+    overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse o contêiner */
 }
 
 @media (max-width: 600px){
