@@ -88,6 +88,13 @@ document.addEventListener('DOMContentLoaded', () => {
             { tipo: 'imagem', src: 'imagens/Projetos/futvolei01.JPG' },
             { tipo: 'imagem', src: 'imagens/Projetos/futvolei02.JPG' },
             { tipo: 'imagem', src: 'imagens/Projetos/futvolei03.JPG' },
+            { tipo: 'imagem', src: 'imagens/Projetos/futevolei001.JPG' },
+            { tipo: 'imagem', src: 'imagens/Projetos/futevolei002.JPG' },
+            { tipo: 'imagem', src: 'imagens/Projetos/futevolei003.JPG' },
+            { tipo: 'imagem', src: 'imagens/Projetos/futevolei004.JPG' },
+            { tipo: 'imagem', src: 'imagens/Projetos/futevolei005.JPG' },
+            { tipo: 'imagem', src: 'imagens/Projetos/futevolei006.JPG' },
+            { tipo: 'imagem', src: 'imagens/Projetos/futevolei007.JPG' },
         ],
         'aniversario': [
             { tipo: 'imagem', src: 'imagens/Projetos/aniversário01.jpg' },
