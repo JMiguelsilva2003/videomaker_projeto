@@ -99,6 +99,12 @@ document.addEventListener('DOMContentLoaded', () => {
         'aniversario': [
             { tipo: 'imagem', src: 'imagens/Projetos/aniversário01.jpg' },
             { tipo: 'imagem', src: 'imagens/Projetos/aniversário02.jpg' },
+            { tipo: 'imagem', src: 'imagens/Projetos/aniversario001.jpg' },
+            { tipo: 'imagem', src: 'imagens/Projetos/aniversario002.jpg' },
+            { tipo: 'imagem', src: 'imagens/Projetos/aniversario003.jpg' },
+            { tipo: 'imagem', src: 'imagens/Projetos/aniversario004.jpg' },
+            { tipo: 'imagem', src: 'imagens/Projetos/aniversario005.jpg' },
+            { tipo: 'imagem', src: 'imagens/Projetos/aniversario005.PNG' },
         ],
         'corporativos': [
             { tipo: 'imagem', src: 'imagens/corpo1.jpg' },
